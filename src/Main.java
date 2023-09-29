@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Input: ");
         String input = scanner.nextLine();
 
-        String[] msv = input.split("[-+*/]");
+        String[] msv = input.split( "\\s+[-+*/]\\s+");
         String firstValue = msv[0];
         String secondValue = msv[1];
 
