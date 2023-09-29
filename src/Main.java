@@ -48,8 +48,9 @@ public class Main {
     static String calculateInt(String input, String firstValue, String secondValue, int secondValueInt) throws Exception {
         if (input.contains("*")) {
             firstValue = firstValue.replaceAll("\"", "");
-            secondValue = secondValue.trim();
             firstValue = firstValue.trim();
+            secondValue = secondValue.trim();
+            
             secondValueInt = Integer.parseInt(secondValue);
             String repeated = firstValue.repeat(secondValueInt);
             if (repeated.length() > 40) {
