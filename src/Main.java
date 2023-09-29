@@ -68,7 +68,7 @@ public class Main {
 
     static int checkInputCondition(String firstValue, String secondValue) throws Exception {
         if (firstValue.contains("\"") && secondValue.contains("\"")) {
-            return firstValue.length() < 10 && secondValue.length() < 10 ? 1 : 0;
+            return firstValue.length() < 10 && secondValue.length() < 10 ? 0 : 1;
         } else if (firstValue.contains("\"") && !secondValue.contains("\"")) {
             secondValue = secondValue.replaceAll(" ", "");
 
