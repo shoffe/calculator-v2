@@ -12,6 +12,10 @@ public class Main {
         String firstValue = msv[0];
         String secondValue = msv[1];
 
+        if (msv.length != 2) {
+            throw new IllegalArgumentException("Неверный оператор");
+        }
+        
         int secondValueInt = 0;
 
         System.out.println("Output:");
